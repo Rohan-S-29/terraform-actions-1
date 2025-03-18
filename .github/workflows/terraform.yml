@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+permissions:  # enable OIDC authentication
+  id-token: write
+  contents: read
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
