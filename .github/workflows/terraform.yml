@@ -43,4 +43,3 @@ jobs:
         run: terraform apply -auto-approve -lock=false
 
       - run: echo "Terraform resources created successfully"
-      
