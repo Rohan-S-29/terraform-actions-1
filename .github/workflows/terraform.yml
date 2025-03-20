@@ -37,9 +37,9 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
-        run: terraform plan -lock=false
+        run: terraform plan
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve -lock=false
+        run: terraform apply -auto-approve
 
       - run: echo "Terraform resources created successfully"
